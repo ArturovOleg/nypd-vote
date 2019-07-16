@@ -1,0 +1,78 @@
+.confirm {
+  &-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 10px 70px;
+  }
+
+  &-title {
+    margin-bottom: 20px;
+  }
+
+  &-board {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &-candidate {
+      width: calc((100% - 90px) / 4);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &-position {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    &-name {
+      margin-bottom: 20px;
+    }
+
+    &-buttongroup {
+      width: 100%;
+      text-align: center;
+    }
+
+    &-btn {
+
+      &__back {
+        border-radius: 40px;
+        outline: none;
+        background: linear-gradient(to top, #c9c9c9, #cfcfcf, #d5d5d5);
+        padding: 10px 0;
+        border: none;
+        cursor: pointer;
+        color: #7a7a7a;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 30px;
+        margin-right: 10px;
+        display: inline-block;
+        width: 15%;
+      }
+      
+      &__confirm {
+        border-radius: 40px;
+        outline: none;
+        background: linear-gradient(to top, #b70000, #c10000, #d00000);
+        padding: 10px 0;
+        border: none;
+        cursor: pointer;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 30px;
+        display: inline-block;
+        width: 15%;
+
+      }
+    }
+  }
+}
+
+.label-voted {
+  padding: 0;
+}

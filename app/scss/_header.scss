@@ -1,0 +1,362 @@
+.header-top-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px;
+}
+
+.header-top {
+  background-color: #063566;
+  background: url("../img/Layer\ 112\ copy.png");
+  border-bottom: 2px solid #4180c4;
+  color: #ffff;
+  &-social {
+    font-size: 16px;
+    font-weight: 500;
+
+    &__facebook {
+      position: relative;
+      padding-left: 25px;
+      margin-right: 30px;
+      vertical-align: middle;
+
+      &:before {
+        content: "\f082";
+        font-family: "FontAwesome";
+        position: absolute;
+        left: 0;
+        font-size: 20px;
+        opacity: 0.5;
+      }
+    }
+
+    &__insta {
+      position: relative;
+      padding-left: 25px;
+      margin-right: 30px;
+      vertical-align: middle;
+
+      &:before {
+        content: "\f16d";
+        font-family: "FontAwesome";
+        position: absolute;
+        left: 0;
+        font-size: 20px;
+        opacity: 0.5;
+      }
+    }
+
+    &__twitter {
+      position: relative;
+      padding-left: 25px;
+      margin-right: 30px;
+      vertical-align: middle;
+
+      &:before {
+        content: "\f081";
+        font-family: "FontAwesome";
+        position: absolute;
+        left: 0;
+        font-size: 20px;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &-useraction {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+
+    &__log {
+      padding: 0 20px;
+      border-right: 2px solid #ffff;
+    }
+
+    &__reg {
+      padding: 0 20px;
+    }
+  }
+}
+
+.header-main-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 10px 10px;
+}
+
+.header-main {
+  &-choose {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    &__subtext {
+      font-size: 20px;
+      font-weight: 900;
+      color: #4180c4;
+    }
+
+    &__button {
+      background: linear-gradient(to top, #b70000, #c10000, #d00000);
+      color: #ffff;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding: 10px 45px;
+      border-radius: 20px;
+      width: max-content;
+      align-self: center;
+    }
+  }
+
+  &-logo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  &-pay {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f0e1;
+    padding: 10px 10px 20px;
+    border: 1px solid #e9e2cd;
+    border-radius: 4px;
+
+    &-buttons {
+      display: flex;
+      margin-bottom: 10px;
+
+      &__donate {
+        background: linear-gradient(to top, #ffb801, #ffc202, #ffd403);
+        color: #111111;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        border-radius: 20px;
+        width: max-content;
+        align-self: center;
+      }
+
+      &__shop {
+        background: linear-gradient(to top, #b70000, #c10000, #d00000);
+        color: #ffff;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        border-radius: 20px;
+        width: max-content;
+        align-self: center;
+        margin-left: 10px;
+      }
+    }
+
+    &-types {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+.header-menu {
+  background: linear-gradient(to top, #06315f, #063668, #073b72);
+  border-top: 1px solid #235284;
+  border-bottom: 1px solid #235284;
+
+  &-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    list-style: none;
+  }
+
+  &-item {
+    color: #ffff;
+    position: relative;
+    flex-grow: 1;
+    font-size: 12px;
+    text-align: center;
+    border-right: 1px solid #235284;
+    border-left: 1px solid #062b53;
+    transition: all 0.5s ease;
+
+    &:first-child {
+      border-left: none;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &-link {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+
+    &:hover {
+      background: linear-gradient(to top, #04284c, #063464);
+    }
+  }
+}
+
+.item-h {
+  &:hover:after {
+    content: "\f015";
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.1;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+  }
+}
+
+.item-a {
+  &:hover:after {
+    content: "\f05a";
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.1;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+  }
+}
+
+.item-b {
+  &:hover:after {
+    content: "\f1ae";
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.1;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+  }
+}
+
+.item-bm {
+  &:hover:after {
+    content: "\f2b5";
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.1;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+  }
+}
+
+.item-e {
+  &:hover:after {
+    content: "\f274";
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.1;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+  }
+}
+
+.item-g {
+  &:hover:after {
+    content: "\f083";
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.1;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+  }
+}
+
+.item-d {
+  &:hover:after {
+    content: "%";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.1;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+  }
+}
+
+.item-s {
+  &:hover:after {
+    content: "\f155";
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.1;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+  }
+}
+
+.item-m {
+  &:hover:after {
+    content: "\f0ea";
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.1;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+  }
+}
+
+.item-c {
+  &:hover:after {
+    content: "\f095";
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.1;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-top-social {
+    font-size: 12px;
+
+    &__facebook,
+    &__insta,
+    &__twitter {
+      &:before {
+        top: -4px;
+      }
+    }
+  }
+
+  
+}
